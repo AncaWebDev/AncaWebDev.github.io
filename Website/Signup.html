@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav>
+			<ul class="box">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="love.html">Love Quotes</a></li>
+				<li><a href="friendship.html">Friendship Quotes</a></li>
+				<li><a href="pictures.html">Quotes in Pictures</a></li>
+			</ul>
+	</nav><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col col-12">
+				<h1>Sign up page</h1>
+			</div>
+			<div class="col col-12">
+				<h2>Stay connected</h2>
+			</div>
+		</div>
+	</div><br>
+	<form method="GET">	
+	<fieldset>
+		<legend>Required fields</legend>
+			Username: <input type="text" name="nume" required=""><br>
+			E-mail address: <input type="email" name="email" required><br>
+			Birthday: <input type="date" name="ziuadenastere" required=""><br>
+			Password: <input type="password" name="password" oninput="document.getElementById('confirm').pattern = this.value.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&')" required><br>
+			Re-enter password: <input type="password" id="confirm" name="confirm" pattern=""title="Passwords must match" required>
+	</fieldset>
+	<fieldset>
+		<legend>Profile questions</legend>
+		Gender: <br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female">Female<br>
+		Favourite quotes <br>
+			<input type="checkbox" name="quotes" value="Love"> Love<br>
+			<input type="checkbox" name="quotes" value="Friendship"> Friendship<br>
+			<input type="checkbox" name="quotes" value="Motivational"> Motivational<br>
+			<input type="checkbox" name="quotes" value="Positivity"> Positivity<br>
+	</fieldset>
+	<fieldset>
+		<legend>Let us know</legend>
+		How did you hear about us?
+		<select name="how">
+			<option value="Discord app"> Discord app </option>
+			<option value="Facebook"> Facebook </option>
+			<option value="From a friend"> From a friend </option>
+			<option value="Other"> Other </option>
+		</select><br><br>
+	</fieldset>
+	<input type="submit" value="Submit your details">
+	<input type="reset" value="Start again">
+	</form>	
+
+</body>
+</html>

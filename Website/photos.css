@@ -1,0 +1,59 @@
+body{
+	background-image: url(book.jpg);
+	background-size: cover;
+}
+
+.box{
+	list-style: none;
+	margin: 0;
+	background: #896565;
+	font-size: 1em;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+    top: 0;
+    right:0px;
+    width: 100%;
+}
+
+.box a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+	color: black;
+}
+
+.box a:hover{
+	background: grey;
+	color: white;
+}
+
+h1{
+	color: #210703;
+	font-size: 3em;
+	font-family: Galada, cursive;
+	text-align: center;
+	border: 7px groove grey;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 60px;
+	cursor: pointer;
+}
+
+img{
+	width: 450px;
+	height: 300px;
+	margin: 20px;
+	transition: all 1s;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.photos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}

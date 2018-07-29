@@ -1,0 +1,148 @@
+body{
+	background-image: url(book.jpg);
+	background-size: cover;
+}
+
+.box{
+	list-style: none;
+	margin: 0;
+	background-color: rgba(157, 157, 157,1);
+	z-index: 1;
+	font-size: 0.85em;
+	font-family: verdana;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+    top: 0;
+    right:0px;
+    width: 100%;
+}
+
+.box a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+	color: black;
+	z-index: 1;
+}
+
+.box a:hover{
+	background: grey;
+	color: white;
+	z-index: 1;
+}
+
+button{
+	position: fixed;
+	background-color: black;
+}
+
+h1{
+	color: #210703;
+	font-size: 3em;
+	font-family: Georgia, cursive;
+	text-align: center;
+	border: 7px groove grey;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+h2{
+	color: #331511;
+	font-size: 2em;
+	text-align: center;
+	font-family: Georgia, cursive;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+span{
+	font-size:1.5em;
+}
+
+.grey{
+	border: 5px solid grey;
+	background: rgba(149, 149, 149, 0.2);
+	padding: 20px 20px;
+	text-align: center;
+	font-family: verdana, cursive;
+}
+
+.grey:hover{
+	background: rgba(140, 92, 89, 0.2);
+}
+
+.quote{
+	border: 5px dotted rgba(157, 157, 157, 1);
+	background-color: rgba(157, 157, 157, 0.2);
+	font-family: verdana, cursive;
+	margin-top: 40px;
+	font-size: 1.3em;
+}
+
+.title{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: georgia;
+}
+
+img{
+	float: right;
+}
+
+.message{
+	text-align: center;
+	font-family: verdana;
+	background-color: rgba(157, 157, 157, 0.2);
+	margin-top: 20px;
+}
+
+.signup{
+	margin-left: 500px;
+	color: black;
+
+}
+
+.btn-info{
+	border: 0px;
+	padding:10px 30px;
+	background-color: black;
+}
+
+.btn-info:hover{
+	background-color: rgba(129, 129, 129, 1);
+	color: white
+}
+
+.row .col-4{
+	border: 3px;
+	/*background-color: rgba(157, 157, 157, 0.5);*/
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 20px;
+
+	/*flex-wrap: wrap;*/
+	justify-content: space-between;
+}
+
+/*.row .col-4:hover{
+	background-color: rgba(149, 73, 67, 0.5);
+}*/
+
+.row .col-4:hover{
+	background-color: rgba(149, 73, 67, 0.5);
+}
+
+
+.all{
+	background-color: rgba(157, 157, 157, 0.5);
+}
+
+
+
+
+

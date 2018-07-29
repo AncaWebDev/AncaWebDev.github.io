@@ -1,0 +1,167 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #6D9B34;
+}
+
+.head { 
+	width: 160px; 
+	margin: 0 auto; 
+	height: 160px; 
+	border-radius: 200px 200px 200px 200px; 
+	margin-bottom: 5px;
+} 
+
+.eyes{
+	display: flex;
+}
+
+.eyes:hover{
+	width: 2em;
+}
+
+.head:hover {
+	transform: translate(0px, -20px);
+	width: 180px;
+	height: 180px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex;
+	justify-content: center; 
+} 
+
+.left_arm, .right_arm { 
+	width: 20px; 
+	height: 145px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	/*transform: rotate(20deg);*/
+	margin-right: 0px;
+	transform: rotate(20deg);
+	transition: 1s ease-in-out; 
+	transform-origin: top;
+} 
+
+.left_arm:hover {
+	-webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.right_arm { 
+	margin-left: 0px;
+	transform: rotate(-20deg); 
+	transition: 1s ease-in-out;
+	transform-origin: top;
+} 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+}
+
+.torso { 
+	width: 30px; 
+	height: 250px;
+	border-radius: 50px 50px 50px 50px;
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	display: flex;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	margin-top: 30px;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 20px; 
+	height: 150px;
+	border-radius: 100px 100px 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 70px; 
+	transform: rotate(20deg);
+	transition: 1s ease-in-out;
+	transform-origin: top;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    background-color: red;
+}
+
+.right_leg { 
+	margin-left: 20px; 
+	transform:rotate(-20deg);
+	transition: 1s ease-in-out;
+	transform-origin: top;
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    background-color: red;
+}
+
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: black;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 80px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 80px; 
+	left: 80px; 
+}
+
+
+
+
+
